@@ -18,6 +18,7 @@ const BlogPost = async ({ params }) => {
     return (
         <article>
             <h1>{post.title}</h1>
+            <hr></hr>
             <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
         </article>
     );

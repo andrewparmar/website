@@ -11,7 +11,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* body {
+body {
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
@@ -60,14 +60,14 @@ ul li {
 
 article {
   max-width: 800px;
-  margin: 2rem auto;
   padding: 2rem;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  margin: 2rem auto;
+  /* background-color: white; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  /* border-radius: 8px; */
 }
 
-header {
+/* header {
   padding: 2rem;
   background-color: #1e90ff;
   color: white;
