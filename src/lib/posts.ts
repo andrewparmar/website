@@ -20,11 +20,8 @@ export const getAllPosts = (): Post[] => {
     const posts = fileNames.map(fileName => {
         const slug = fileName.replace(/\.md$/, "")
         const filePath = join(process.cwd(), "_posts", fileName)
-        console.log(filePath)
         const fileContents = fs.readFileSync(filePath)
         const {data, content} = matter(fileContents)
-        console.log(data)
-        console.log(content)
 
         return {
             slug,

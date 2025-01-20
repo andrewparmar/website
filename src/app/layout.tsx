@@ -15,7 +15,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <header>
+          ANDREW PARMAR
+          <nav>
+            {/* Add navigation items */}
+          </nav>
+        </header>
+
         {children}
+
+        {false && <footer>
+          <p>© 2025 Andrew Parmar</p>
+        </footer>}
       </body>
     </html>
   );
