@@ -36,3 +36,7 @@ In search of some examples I can follow to use Markdown as the source of my blog
     * `markdown-it` is more lightweight and fast
 
 I used a combination of the second and third. The third provided easy setup but needed some optimization that I borrowed from the NextJS starter blog template.
+
+## Flexbox
+Flexbox is a powerful tool for laying out content.
+I was trying to line up the date and title of each post, and cursor suggested using flexbox.
