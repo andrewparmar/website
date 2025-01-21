@@ -40,3 +40,21 @@ I used a combination of the second and third. The third provided easy setup but 
 ## Flexbox
 Flexbox is a powerful tool for laying out content.
 I was trying to line up the date and title of each post, and cursor suggested using flexbox.
+
+
+# Debugging NextJS
+
+I'm using the `debug` script in `package.json` to run the dev server with the debugger.
+
+```
+npm run debug
+```
+
+However, I'm having trouble getting the Chrome dev tools to show the sources.
+
+I'm using the `inspect` flag in the `NODE_OPTIONS` environment variable.
+
+```
+NODE_OPTIONS='--inspect' next dev --turbopack
+```
+https://www.youtube.com/watch?v=_5mGxLZ61J0
