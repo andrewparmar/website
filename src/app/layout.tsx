@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -17,9 +16,6 @@ export default function RootLayout({
       <body>
         <header>
           ANDREW PARMAR
-          <nav>
-            {/* Add navigation items */}
-          </nav>
         </header>
 
         {children}

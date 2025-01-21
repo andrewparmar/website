@@ -1,12 +1,18 @@
-import { getPostBySlug } from "@/lib/posts";
+import { getAllPosts, getPostBySlug } from "@/lib/posts";
 import { Post } from "@/interfaces/posts";
 import { notFound } from "next/navigation";
 import MarkdownIt from 'markdown-it';
 
 const md = new MarkdownIt();
 
-const BlogPost = async ({ params }) => {
-    const resolvedParams = await params;
+type Props = {
+    params: Promise<{
+        slug: string;
+    }>;
+};
+
+const BlogPost = async (props: Props) => {
+    const resolvedParams = await props.params;
     const post: Post = getPostBySlug(resolvedParams.slug);
   
     if (!post) {
@@ -25,3 +31,12 @@ const BlogPost = async ({ params }) => {
 };
 
 export default BlogPost;
+
+
+export async function generateStaticParams() {
+    const posts = getAllPosts();
+  
+    return posts.map((post) => ({
+      slug: post.slug,
+    }));
+  }
