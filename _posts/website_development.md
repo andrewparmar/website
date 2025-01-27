@@ -58,3 +58,11 @@ I'm using the `inspect` flag in the `NODE_OPTIONS` environment variable.
 NODE_OPTIONS='--inspect' next dev --turbopack
 ```
 https://www.youtube.com/watch?v=_5mGxLZ61J0
+
+
+# Publishing to Github Pages
+I wanted to quicked options possible. Since I'm already using Github as my remote repository, I figured I could first give Github Pages a try.
+
+First I needed to make my respitory public from private. The site doesn't contain anything sensitive so that wasn't an issue. Next, I needed to configurea publishing source. Following this [page](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site), I opted for my main branch and tthe `/docs` folder as the root of the content. I had to change my build destination for my build command to `docs` in my next.config.ts file. By adding 
+
+https://www.freecodecamp.org/news/how-to-deploy-next-js-app-to-github-pages/
