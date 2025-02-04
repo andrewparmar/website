@@ -27,8 +27,10 @@ export const getAllPosts = (): Post[] => {
             slug,
             ...data,
             content,
+            timestamp: new Date(data.date).getTime()
         } as Post
     })
+    posts.sort((a, b) => b.timestamp - a.timestamp)
 
     return posts
 }
