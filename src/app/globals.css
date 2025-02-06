@@ -70,13 +70,24 @@ header {
   text-align: center;
   font-family: 'Georgia', 'serif';
   font-size: 2rem;
-  border-bottom: #333 1px solid;
+  border-bottom: #ebebeb 1px solid;
 }
 
 main {
   max-width: 800px;
   padding: 2rem;
   margin: 0rem auto;
+}
+
+.site-logo {
+  font-family: 'Garamond', 'serif';
+  font-size: 2.5rem;
+  color: rgb(33, 3, 3);
+  text-decoration: none;
+}
+
+.site-logo:hover {
+  color: inherit;
 }
 
 /* 

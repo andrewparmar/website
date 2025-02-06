@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,11 +16,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <header>
-          ANDREW PARMAR
+          <Link href="/" className="site-logo">Andrew Parmar</Link>
         </header>
-
         {children}
-
         {false && <footer>
           <p>© 2025 Andrew Parmar</p>
         </footer>}
